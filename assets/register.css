@@ -1,0 +1,18 @@
+*{
+    margin:0;   
+    padding:0;
+    box-sizing: border-box;
+
+}
+.main{
+    padding:30px 300px 100px;
+    
+}
+
+.button{
+    width:200px;    
+    margin:30px 10px 0;
+}
+.title-std{
+    padding: 0 0 20px;
+}
