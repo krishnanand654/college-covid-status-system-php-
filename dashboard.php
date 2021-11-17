@@ -1,6 +1,6 @@
  <?php 
       include 'components/Sidebar.php';
-    ?>
+?>
 
   
       
@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DCSS</title>
     <link rel = "stylesheet" href="assets/dashboard.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -30,30 +30,69 @@
         $sql3 = "SELECT * FROM vacdetails where vacstatus ='yes' ORDER BY id ASC";
         $result3 = mysqli_query($conn, $sql3);
         $row3 = mysqli_num_rows($result3);
+
+        $sql4 = "SELECT * FROM message";
+        $result4 = mysqli_query($conn, $sql4);
+        $row4 = mysqli_num_rows($result4);
     ?>
 
+    
+
 <div class="main">
-<h3>Hello, Admin <img src="https://img.icons8.com/fluency/50/000000/so-so.png"/></h3>
-<div class="stat">
-                    <h5>Registered<br><?php echo $row; ?></h5>
-                    <h5>Covid affected<br><?php echo $row2;?></h5>
-                    <h5>Vaccinated<br><?php echo $row3;?></h5>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col col1">
+
+        <h3>Hello, Admin <img src="https://img.icons8.com/fluency/50/000000/so-so.png"/></h3>
+        <div class="stat">
+                            <a href="manage_student.php"><h5>Registered<br><?php echo $row; ?></h5></a>
+                            <a href="covid_status.php"><h5>Covid affected<br><?php echo $row2;?></h5></a>
+                            <a href="vaccination_status.php"><h5>Vaccinated<br><?php echo $row3;?></h5></a>
+          </div>
+
+      <div class="window">
+        <div>
+        <canvas id="myChart"></canvas>
+        </div>
+      </div>
+     
+    </div>
+
+
+    <div class="col col2">
+        <div class="notifi">
+              <h1 class="time"> <?php echo date('d-m-Y'); ?></h1>
+              <h3>Notification<i class="fas fa-bell"></i> <span class="count"><?php echo $row4;?></span><h3>
+        </div>
+        <div class="frame-2">
+            <table class="table"> 
+                <?php
+                if($row4 > 0){?>
+                    <?php
+                    while($res4 = mysqli_fetch_array($result4)):?>
+                                <tr>
+                                <th><?php echo  $res4['name']; ?></th>
+                                <td><a href="message.php">Added a message</a></td>
+                                </tr>
+                    <?php endwhile; ?>
+                <?php }else{
+                        echo "<tr><td colspan='3'>no records</td></tr>"; 
+                        }?>
+                                
+                    </table>  
+        </div> 
   </div>
 
+</div>
 
-<div class="window">
-  <div>
-  <canvas id="myChart"></canvas>
-</div>
-</div>
-</div>
 <script>
   // === include 'setup' then 'config' above ===
   const labels = [
   'students registered',
   'covid affected',
-  'vaccinated',
-  
+  'vaccinated'
 ];
 const data = {
   labels: labels,
@@ -61,21 +100,21 @@ const data = {
     label: 'Overview',
     data: [<?php echo $row?>, <?php echo $row2?>, <?php echo $row3;?>],
     backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
       'rgba(75, 192, 192, 0.2)',
       'rgba(54, 162, 235, 0.2)',
       'rgba(153, 102, 255, 0.2)',
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
       'rgba(201, 203, 207, 0.2)'
     ],
     borderColor: [
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)',
-      'rgb(255, 205, 86)',
       'rgb(75, 192, 192)',
       'rgb(54, 162, 235)',
       'rgb(153, 102, 255)',
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
       'rgb(201, 203, 207)'
     ],
     borderWidth: 1

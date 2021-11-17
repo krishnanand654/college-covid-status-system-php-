@@ -27,5 +27,58 @@
 }
 
 .main{
-    padding: 20px 300px 0;
+    margin-left:300px;
+}
+
+.stat a{
+    text-decoration: none;
+}
+
+.col2{
+    border-left: 2px solid rgb(231, 231, 231);
+    height:100vh;
+    margin-left:130px;
+    margin-right:0px;
+    padding:20px 0 0;
+}
+
+.col1{
+    padding:20px 0 0;
+}
+
+.notifi .time{
+        
+        padding:9px 15px 10px;
+        text-align:center;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+        color:black;
+        height: 50px;
+        border-radius:10px;
+        margin:20px 55px 0;
+        width:250px;
+        font-size:20pt;
+        }
+
+
+.notifi h3{
+    font-size:18pt;
+    padding:40px 40px 0;
+}
+
+.notifi i{
+    font-size: 16pt;
+    padding-left:10px;
+}
+
+.frame-2{
+    padding:0px 10px 0;
+    text-align: center;
+}
+
+.count{
+    font-size: 12pt;
+    background-color: rgb(127, 156, 250);
+    color:white;
+    padding:1px 8px 3px;
+    border-radius: 50%;
 }

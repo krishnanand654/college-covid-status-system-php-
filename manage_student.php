@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DCSS</title>
     <link rel="stylesheet" href="./assets/manage_student.css"/>
 </head>
 <body>
@@ -18,7 +18,7 @@
 
 <form action="" method="POST">
   <div class="form-group">
-    <input class="form-control" type="text" name="id" autocomplete="off"  placeholder="enter id *"/>
+    <input class="form-control" type="text" name="id" autocomplete="off"  placeholder="Enter id / Register.no"/>
    </div><br>
    <div class="form-group">
     <input type="submit" class="btn btn-primary" name="search" value="search"/>
@@ -79,9 +79,13 @@
 
     if(isset($_POST['search'])){
         $x=$_POST['id'];
-        $sql = "SELECT * FROM student where id = $x OR reg_num = $x ";
+        $sql = "SELECT * FROM student where `id` = $x OR `reg_num` = $x ";
         $result = mysqli_query($conn, $sql);
-        $row=mysqli_num_rows($result);
+        if($result){
+          $row=mysqli_num_rows($result);
+        }else{
+          $row = 0;
+        }
     
   }else{?>
   <?php

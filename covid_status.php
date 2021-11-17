@@ -18,7 +18,7 @@ include 'components/Sidebar.php';
 
 <form action="" method="POST">
 <div class="form-group">
-<input class="form-control" type="text" name="id" autocomplete="off"  placeholder="enter id *"/>
+<input class="form-control" type="text" name="id" autocomplete="off"  placeholder="Enter id / Register.no"/>
 </div><br>
 <div class="form-group">
 <input type="submit" class="btn btn-primary" name="search" value="search"/>
