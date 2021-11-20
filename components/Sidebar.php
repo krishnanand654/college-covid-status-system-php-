@@ -29,6 +29,7 @@
                     <li class="active"><a href="./manage_student.php"><i class="fas fa-tasks"></i> Manage student</a></li>
                     <li class="active"><a href="./covid_status.php"><i class="fas fa-virus"></i> Covid Status</a></li>
                     <li class="active"><a href="./vaccination_status.php"><i class="fas fa-syringe"></i> Vaccination </a></li>
+                    <li class="active"><a href="./messages.php"><i class="fas fa-comment"></i> Messages</a></li>
                 </ul>
                 <p class="logout" onclick ="logout()"><i class="fas fa-sign-out-alt"></i>Logout</p>
             </div>

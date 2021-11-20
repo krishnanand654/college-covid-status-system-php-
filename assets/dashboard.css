@@ -8,9 +8,9 @@
     display: flex;
 }
 .stat h5{
-        margin: 50px 20px 60px;
+        margin: 50px 10px 60px;
         height: 100px;
-        width:200px;
+        width:170px;
         text-align:center;
         border-radius:10px;
         color:white;  
@@ -30,14 +30,14 @@
     margin-left:300px;
 }
 
-.stat a{
+a{
     text-decoration: none;
 }
 
 .col2{
     border-left: 2px solid rgb(231, 231, 231);
     height:100vh;
-    margin-left:130px;
+    margin-left:90px;
     margin-right:0px;
     padding:20px 0 0;
 }
@@ -46,7 +46,7 @@
     padding:20px 0 0;
 }
 
-.notifi .time{
+ .time{
         
         padding:9px 15px 10px;
         text-align:center;
@@ -62,7 +62,8 @@
 
 .notifi h3{
     font-size:18pt;
-    padding:40px 40px 0;
+    padding: 40px 0 20px;
+    padding-left: 40px;
 }
 
 .notifi i{
@@ -79,6 +80,18 @@
     font-size: 12pt;
     background-color: rgb(127, 156, 250);
     color:white;
-    padding:1px 8px 3px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
     border-radius: 50%;
+}
+
+
+.notifi{
+    display: flex;
+}
+
+.notifi .count{
+    margin:5px 0 0;
+    padding-right:1px;
 }
