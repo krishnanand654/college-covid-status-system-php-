@@ -53,16 +53,6 @@ $p =  $_SESSION["user"];
                     <div class="content">
                         <form  action="" method="POST">
                             <div class="form-group">
-                                <label>Full Name</label>
-                                <input class="form-control" type="text" name="name" autocomplete="off" /><br>
-                            </div>
-                        
-                            
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input class="form-control" type="text" name="email" autocomplete="off"  /><br>
-                            </div>
-                            <div class="form-group">
                                 <label>Message</label>
                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" autocomplete="off"></textarea>
                             </div>
@@ -110,9 +100,9 @@ $p =  $_SESSION["user"];
         if(isset($_POST['submit']))
                     {
                       $id='';
-                      $name=$_POST['name'];
+                      $name=$row['name'];
                       $no=$p;
-                      $email = $_POST['email'];
+                      $email = $row['email'];
                       $message=$_POST['message'];
                       $date = date('d-m-Y');
                       

@@ -94,8 +94,8 @@ while($res = mysqli_fetch_array($result)):?>
         <tr>
         <td><?php echo $res['id']; ?></td>
         <td><?php echo $res['reg_no']; ?></td>
-        <td><?php echo $res['email']; ?></td>
         <td><?php echo $res['name']; ?></td>
+        <td><?php echo $res['email']; ?></td>
         <td><?php echo $res['message']; ?></td>
         <td><?php echo $res['date']; ?></td>
         <td><a class="btn btn-danger" href="messages.php?delete=<?php echo $res['id'];?>">Delete</a>
