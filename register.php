@@ -52,13 +52,19 @@
                     <label>Phone no<span style="color:red;">*</span></label>
                     <input class="form-control" type="number" name="contact" autocomplete="off" value="<?php echo $arrdata['no']; ?>" required/><br>
                   </div>
+
+                  <div class="form-group">
+                    <label>Email<span style="color:red;">*</span></label>
+                    <input class="form-control" type="text" name="email" autocomplete="off" value="<?php echo $arrdata['email']; ?>" required/><br>
+                  </div>
+              
                   
                   <div class="form-group">
                     <label>Register.no<span style="color:red;">*</span></label>
                     <input class="form-control" type="number" name="reg_num" autocomplete="off" value="<?php echo $arrdata['reg_num']; ?>" required/><br>
                   </div>
                   
-              
+                
               
               <div class="form-group">
                   <label>Department<span style="color:red;">*</span></label>
@@ -132,6 +138,7 @@
                 $name=$_POST['name'];
                 $number=$_POST['contact'];
                 $reg_num=$_POST['reg_num'];
+                $email=$_POST['email'];
                 $dept=$_POST['dept'];
                 $course=$_POST['course'];
                 $cvdstatus=$_POST['cvdstatus'];
@@ -141,7 +148,7 @@
                 $dos_no=$_POST['dos_no'];
 
             
-                $sql = "UPDATE student SET `name`='$name' , `no`='$number', `dept`='$dept', `course`= '$course',`reg_num`='$reg_num' WHERE id= $idupdate";
+                $sql = "UPDATE student SET `name`='$name' , `no`='$number',`email`='$email', `dept`='$dept', `course`= '$course',`reg_num`='$reg_num' WHERE id= $idupdate";
                 $result=mysqli_query($conn, $sql);
                 
 
@@ -184,6 +191,7 @@
                       $name=$_POST['name'];
                       $number=$_POST['contact'];
                       $reg_num=$_POST['reg_num'];
+                      $email=$_POST['email'];
                       $dept=$_POST['dept'];
                       $course=$_POST['course'];
                       $cvdstatus=$_POST['cvdstatus'];
@@ -202,7 +210,7 @@
                         </script>';
                       }else{
 
-                      $sql = "INSERT INTO student VALUES('$id','$name','$number','$dept','$course','$reg_num')";
+                      $sql = "INSERT INTO student VALUES('$id','$name','$number','$dept','$course','$reg_num','$email')";
                       $result=mysqli_query($conn, $sql);
                       
                 

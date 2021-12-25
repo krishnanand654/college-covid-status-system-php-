@@ -1,58 +1,60 @@
-*{
-    margin:0;   
-    padding:0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main{
-    height:100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.listul li{
-    list-style: none;
-    padding:10px 0 10px;
-    text-align:center;
+.listul li {
+  list-style: none;
+  padding: 10px 10px 10px;
+  text-align: center;
 }
 
-.listul{
-    padding:40px 0px 0;
+.listul {
+  padding: 40px 0px 0;
+  display: flex;
+  flex-direction: row;
 }
 
-.listul li a{
-    text-decoration: none;
-   
-    
+.listul li a {
+  text-decoration: none;
 }
 
-.card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:400px;
-    width: 20rem;
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 50rem;
 }
 
-.img{
-    height:120px;
-    width:100px;
+.img {
+  height: 120px;
+  width: 100px;
 }
 
-.card .x{
-    height:50px;
-    padding:0 10px 0;
-    display: flex;
-    flex-direction: row;
+.card .x {
+  height: 150px;
+  width: 150px;
+  border-radius: 8px;
+  padding: 0 10px 0;
 }
 
-.card-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:black;
-    padding:0px;
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 0px;
 }
 
+i {
+  padding: 15px;
+}

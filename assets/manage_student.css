@@ -1,10 +1,10 @@
-*{
-    margin:0;   
-    padding:0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.box{
-    padding:100px 300px 100px;
-    
+.box {
+  padding: 100px 0 100px;
+  padding-left: 280px;
+  padding-right: 40px;
 }

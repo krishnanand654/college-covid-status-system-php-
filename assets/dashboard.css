@@ -1,97 +1,93 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.stat{
-    padding:0 0 0;
-    display: flex;
+.stat {
+  padding: 0 0 0;
+  display: flex;
 }
-.stat h5{
-        margin: 50px 10px 60px;
-        height: 100px;
-        width:170px;
-        text-align:center;
-        border-radius:10px;
-        color:white;  
-        padding:10px;
-        line-height:40px;
-        background:rgb(78, 116, 241);
-        box-shadow: 10px 10px 40px rgb(167, 167, 167,0.8); 
-}
-
-.window{
-   
-    position: relative;
-    width:700px;
+.stat h5 {
+  margin: 50px 10px 60px;
+  height: 100px;
+  width: 170px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+  line-height: 40px;
+  background: rgb(78, 116, 241);
+  box-shadow: 10px 10px 40px rgb(167, 167, 167, 0.8);
 }
 
-.main{
-    margin-left:300px;
+.window {
+  position: relative;
+  width: 700px;
 }
 
-a{
-    text-decoration: none;
+.main {
+  margin-left: 300px;
 }
 
-.col2{
-    border-left: 2px solid rgb(231, 231, 231);
-    height:100vh;
-    margin-left:90px;
-    margin-right:0px;
-    padding:20px 0 0;
+a {
+  text-decoration: none;
 }
 
-.col1{
-    padding:20px 0 0;
+.col2 {
+  border-left: 2px solid rgb(231, 231, 231);
+  height: 100vh;
+  margin-left: 90px;
+  margin-right: 0px;
+  padding: 20px 0 0;
 }
 
- .time{
-        
-        padding:9px 15px 10px;
-        text-align:center;
-        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
-        color:black;
-        height: 50px;
-        border-radius:10px;
-        margin:20px 55px 0;
-        width:250px;
-        font-size:20pt;
-        }
-
-
-.notifi h3{
-    font-size:18pt;
-    padding: 40px 0 20px;
-    padding-left: 40px;
+.col1 {
+  padding: 20px 0 0;
 }
 
-.notifi i{
-    font-size: 16pt;
-    padding-left:10px;
+.time {
+  padding: 9px 15px 10px;
+  text-align: center;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+  color: black;
+  height: 50px;
+  border-radius: 10px;
+  margin: 20px 55px 0;
+  width: 250px;
+  font-size: 20pt;
 }
 
-.frame-2{
-    padding:0px 10px 0;
-    text-align: center;
+.notifi h3 {
+  font-size: 18pt;
+  padding: 40px 0 20px;
+  padding-left: 40px;
 }
 
-.count{
-    font-size: 12pt;
-    background-color: rgb(127, 156, 250);
-    color:white;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    border-radius: 50%;
+.notifi i {
+  font-size: 16pt;
+  padding-left: 10px;
 }
 
-
-.notifi{
-    display: flex;
+.frame-2 {
+  padding: 0px 10px 0;
+  text-align: center;
 }
 
-.notifi .count{
-    margin:5px 0 0;
-    padding-right:1px;
+.count {
+  font-size: 12pt;
+  background-color: rgb(127, 156, 250);
+  color: white;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.notifi {
+  display: flex;
+}
+
+.notifi .count {
+  margin: 5px 0 0;
+  padding-right: 1px;
 }

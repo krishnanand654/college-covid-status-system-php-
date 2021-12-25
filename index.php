@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        include './landing.php';
+        include 'landing.php';
     ?>
 </body>
 </html>

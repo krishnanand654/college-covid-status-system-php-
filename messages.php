@@ -40,6 +40,7 @@ if(isset($_POST['back'])){
   <th scope="col">Id</th>
   <th scope="col">Register.no</th>
   <th scope="col">Name</th>
+  <th scope="col">Email</th>
   <th scope="col">Messages</th>
   <th scope="col">Date</th>
   <th scope="col">Action</th> 
@@ -93,6 +94,7 @@ while($res = mysqli_fetch_array($result)):?>
         <tr>
         <td><?php echo $res['id']; ?></td>
         <td><?php echo $res['reg_no']; ?></td>
+        <td><?php echo $res['email']; ?></td>
         <td><?php echo $res['name']; ?></td>
         <td><?php echo $res['message']; ?></td>
         <td><?php echo $res['date']; ?></td>

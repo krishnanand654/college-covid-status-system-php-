@@ -37,7 +37,8 @@
       <tr>
       <th scope="col">Id</th>
       <th scope="col">Name</th>
-      <th scope="col">contact.no</th>
+      <th scope="col">Contact.no</th>
+      <th scope="col">Email</th>
       <th scope="col">Register.no</th>
       <th scope="col">Department</th>
       <th scope="col">Course</th>
@@ -102,6 +103,7 @@
             <td><?php echo $res['id']; ?></td>
             <td><?php echo $res['name']; ?></td>
             <td><?php echo $res['no']; ?></td>
+            <td><?php echo $res['email']; ?></td>
             <td><?php echo $res['reg_num']; ?></td>
             <td><?php echo $res['dept']; ?> </td>
             <td><?php echo $res['course']; ?> </td>

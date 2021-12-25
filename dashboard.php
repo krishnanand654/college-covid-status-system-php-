@@ -20,7 +20,7 @@
         $result = mysqli_query($conn, $sql);
         $row = mysqli_num_rows($result);
 
-        $date = date('Y-m-d');
+        $date =  date('d-m-Y');
 
         $sql2 = "SELECT * FROM cvddetails where cvdstatus = 'yes' and cvddate ='$date' ORDER BY id ASC";
         $result2 = mysqli_query($conn, $sql2);
