@@ -31,8 +31,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
-  width: 50rem;
+  height: 50px;
+  width: 30rem;
+  border: none;
+  margin: 0 0 10px;
 }
 
 .img {
@@ -40,11 +42,12 @@
   width: 100px;
 }
 
-.card .x {
+.x {
   height: 150px;
   width: 150px;
   border-radius: 8px;
   padding: 0 10px 0;
+  border: 1px solid rgb(219, 219, 219);
 }
 
 .card-body {

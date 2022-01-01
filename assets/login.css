@@ -9,14 +9,28 @@
 
 .group {
   padding: 60px;
-  background-color: blue;
   border-radius: 10px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
   background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(15px);
+}
+
+.admin {
+  padding: 10px 100px 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.15);
+  background: black;
+  backdrop-filter: blur(15px);
+  text-decoration: none;
+  color: white;
+}
+
+.admin:hover {
+  color: grey;
+  cursor: pointer;
+}
+.card2 {
+  margin: 30px;
 }
 
 .title {
@@ -34,6 +48,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .btn {
   margin: 20px 0 0;
 }

@@ -40,9 +40,12 @@
 
         </form>
         </div>
+        <div class="card2">
+            <a class="admin" href="../login.php">Login as Admin</a>
+        </div>
+   
     </div>
 
-   
     <?php
 
  

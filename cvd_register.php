@@ -42,7 +42,7 @@
 
                   <span style="padding:8px;"></span>
                   <div class="form-group " id="mycode">
-                  <label>If yes when<span style="color:red;">*</span> <span style="font-size:12px;"><I>(no need to fill if you are not get affected)</I></span></label>
+                  <label>If yes when<span style="color:red;">*</span> </label>
                      <input class="form-control" type="text" name="cvddate" autocomplete="off" value="<?php echo $arrdata1['cvddate']; ?>" placeholder="YYYY-MM-DD" /><br>
                   </div>
                  

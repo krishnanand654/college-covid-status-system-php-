@@ -43,7 +43,7 @@ $p =  $_SESSION["user"];
                 <h5>   <?php echo $row['name']; ?><h5> 
                 <h1 class="subtitle"><?php echo $row['reg_num']; ?></h1> 
                 <div class="button">  
-                    <button class="btn btn-primary btn-sm btn" onclick="location.href='student_login.php';">Logout <i class="fas fa-sign-out-alt"></i></button>
+                    <button class="btn btn-primary btn-sm btn" onclick="location.href='../index.php';">Logout <i class="fas fa-sign-out-alt"></i></button>
                     <button class="btn btn-primary btn-sm btn" onclick="location.href='#popup1';">Message <i class="fas fa-comment"></i></button>
                 </div> 
                 <div id="popup1" class="overlay1">
