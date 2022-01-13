@@ -91,8 +91,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>CCSS</title>
+    <link rel = "icon" href = "../assets\images\coicon.png" type = "image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/register.css">
     <script src="../assets/action.js"></script>
@@ -158,7 +158,7 @@
                   <span style="padding:8px;"></span>
                   <div class="form-group " id="mycode">
                   <label>If yes when<span style="color:red;">*</span> <span style="font-size:12px;"></label>
-                     <input class="form-control" type="text" name="cvddate" autocomplete="off" value="<?php echo $arrdata1['cvddate']; ?>" placeholder="YYYY-MM-DD" /><br>
+                     <input class="form-control" type="date" name="cvddate" autocomplete="off" value="<?php echo $arrdata1['cvddate']; ?>" /><br>
                   </div>
 
                
@@ -174,7 +174,7 @@
                   <div id="mycode1" >
                   <div class="form-group" >
                   <label>If yes when<span style="color:red;">*</span> </label>
-                     <input class="form-control" type="text" name="vacdate" autocomplete="off" value="<?php echo $arrdata2['vacdate']; ?>" placeholder="YYYY-MM-DD" /><br>
+                     <input class="form-control" type="date" name="vacdate" autocomplete="off" value="<?php echo $arrdata2['vacdate']; ?>" /><br>
                   </div>
 
                   <div class="form-group" >

@@ -10,7 +10,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DCSS</title>
+    <title>CCSS</title>
+    <link rel = "icon" href = "assets\images\coicon.png" type = "image/x-icon">
     <link rel = "stylesheet" href="assets/dashboard.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -20,7 +21,7 @@
         $result = mysqli_query($conn, $sql);
         $row = mysqli_num_rows($result);
 
-        $date =  date('d-m-Y');
+        $date =  date('Y-m-d');
 
         $sql2 = "SELECT * FROM cvddetails where cvdstatus = 'yes' and cvddate ='$date' ORDER BY id ASC";
         $result2 = mysqli_query($conn, $sql2);

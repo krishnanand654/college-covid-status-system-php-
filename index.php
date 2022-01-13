@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel = "icon" href = "assets\images\corona.png" type = "image/x-icon">
+    <link rel = "icon" href = "assets\images\coicon.png" type = "image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
@@ -16,9 +16,13 @@
 <body>
 <div class="nav-Bar">
               <header id="header" class="header">
-              <h2 class="logo">CCSS</h2>
+              <h2 class="logo"><img class="logo_img" src="assets\images\coicon.png" /> CCSS</h2>
+              <a  class= "bg-primary b" href='student/student_login.php'>Login <i class="fas fa-arrow-right arrow"></i></a>
               </header>
-            </div>
+             
+  </div>
+ 
+  
     <div class="container">
         <div class="row">
        
@@ -30,7 +34,7 @@
             The system will record the student details, their covid and vaccination details. This system will help to monitor the status of students to take better precausion from covid.
             Become a part of this big step.</p>
 
-            <a  class= "bg-primary button" onclick="location.href='student/student_login.php';">Login <i class="fas fa-arrow-right arrow"></i></a>
+            <a  class= "bg-primary button" href='student/student_login.php'>Login <i class="fas fa-arrow-right arrow"></i></a>
           </div>
 
           
@@ -38,7 +42,7 @@
 
           <div class="col">
             <div class="image_pos">
-              <img class="image" src="assets\images\5797.jpg">
+              <img class="image" src="assets\images\mask.webp">
             </div>
           
           </div>
@@ -78,7 +82,7 @@
             </div>
           </div>   
           <div class="footer"> 
-            <p><a href="" onclick="topFunction()" class="up"><i class="fas fa-arrow-circle-up"></i></a></p>
+            <p><a href="#" onclick="topFunction()" class="up"><i class="fas fa-arrow-circle-up"></i></a></p>
           </div>   
         </div>
         

@@ -11,13 +11,37 @@
   z-index: 1000;
 }
 
+.nav-Bar .b {
+  display: none;
+}
+
+.b {
+  text-decoration: none;
+  color: white;
+  width: 120px;
+  padding: 5px;
+  height: 35px;
+  margin: 5px 0 0;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   height: auto;
   background-color: white;
-  padding: 10px 110px 10px;
+  padding: 10px 110px 3px;
 }
-
+.logo_img {
+  width: auto;
+  height: 40px;
+  position: relative;
+  top: -3.5px;
+}
 .logo {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -25,6 +49,11 @@
 
 .scrolling-active {
   border-bottom: 1px solid rgb(201, 201, 201);
+  transition: 0.5s ease-in-out;
+}
+
+.scrolling-active .b {
+  display: inline;
   transition: 0.5s ease-in-out;
 }
 
@@ -75,7 +104,8 @@
   cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.b:hover {
   color: white;
 }
 

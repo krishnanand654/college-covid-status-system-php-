@@ -9,7 +9,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CCSS</title>
+    <link rel = "icon" href = "assets\images\coicon.png" type = "image/x-icon">
     <link rel="stylesheet" href="assets/register.css">
     <script src="assets/action.js"></script>
 </head>
@@ -42,7 +43,7 @@
                   <div id="mycode1" >
                   <div class="form-group" >
                   <label>If yes when<span style="color:red;">*</span></label>
-                     <input class="form-control" type="text" name="vacdate" autocomplete="off" value="<?php echo $arrdata2['vacdate']; ?>" placeholder="YYYY-MM-DD" /><br>
+                     <input class="form-control" type="date" name="vacdate" autocomplete="off" value="<?php echo $arrdata2['vacdate']; ?>"  /><br>
                   </div>
 
                   <div class="form-group" >
