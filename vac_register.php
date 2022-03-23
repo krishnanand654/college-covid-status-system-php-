@@ -42,7 +42,7 @@
                   <span style="padding:8px;"></span>
                   <div id="mycode1" >
                   <div class="form-group" >
-                  <label>If yes when<span style="color:red;">*</span></label>
+                  <label>If yes when<span style="color:red;">*</span><I>&#40; last taken date &#41;</I></label>
                      <input class="form-control" type="date" name="vacdate" autocomplete="off" value="<?php echo $arrdata2['vacdate']; ?>"  /><br>
                   </div>
 

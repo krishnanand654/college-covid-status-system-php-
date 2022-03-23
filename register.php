@@ -176,7 +176,7 @@
 
                   <span style="padding:8px;"></span>
                   <div class="form-group " id="mycode">
-                  <label>If yes when<span style="color:red;">*</span> <span style="font-size:12px;"></label>
+                  <label>If yes when<span style="color:red;">*</span><I>&#40; last affected date &#41;</I> <span style="font-size:12px;"></label>
                      <input class="form-control" type="date" name="cvddate" autocomplete="off" value="<?php echo $arrdata1['cvddate']; ?>"/><br>
                   </div>
 
@@ -192,7 +192,7 @@
                   <span style="padding:8px;"></span>
                   <div id="mycode1" >
                   <div class="form-group" >
-                  <label>If yes when<span style="color:red;">*</span> </label>
+                  <label>If yes when<span style="color:red;">*</span><I>&#40; last taken date &#41;</I> </label>
                      <input class="form-control" type="date" name="vacdate" autocomplete="off" value="<?php echo $arrdata2['vacdate']; ?>"  /><br>
                   </div>
 

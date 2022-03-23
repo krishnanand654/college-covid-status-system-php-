@@ -43,7 +43,7 @@
 
                   <span style="padding:8px;"></span>
                   <div class="form-group " id="mycode">
-                  <label>If yes when<span style="color:red;">*</span> </label>
+                  <label>If yes when<span style="color:red;">*</span><I>&#40; last affected date &#41;</I>  </label>
                      <input class="form-control" type="date" name="cvddate" autocomplete="off" value="<?php echo $arrdata1['cvddate']; ?>" /><br>
                   </div>
                  
